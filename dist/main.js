@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -398,27 +398,27 @@ eval("\n\nmodule.exports = function (module) {\n\tif (!module.webpackPolyfill) {
 
 /***/ }),
 
-/***/ "./src/App.js":
-/*!********************!*\
-  !*** ./src/App.js ***!
-  \********************/
+/***/ "./src/js/components/App.js":
+/*!**********************************!*\
+  !*** ./src/js/components/App.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) {\n    return obj && obj.__esModule ? obj : { default: obj };\n}\n\nvar App = function App() {\n    return _react2.default.createElement(\"div\", null, _react2.default.createElement(\"p\", null, \" React here! \"), _react2.default.createElement(\"div\", { className: \"col-sm-6\" }, \"1 slide\"), _react2.default.createElement(\"div\", { className: \"col-sm-6\" }, \"2 slide\"), _react2.default.createElement(\"div\", null, \"3 slide\"));\n};\nexports.default = App;\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById(\"app\"));\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) {\n    return obj && obj.__esModule ? obj : { default: obj };\n}\n\nvar App = function App() {\n    return _react2.default.createElement(\"div\", null, _react2.default.createElement(\"p\", null, \" React here! \"), _react2.default.createElement(\"div\", { className: \"col-sm-6\" }, \"1 slide\"), _react2.default.createElement(\"div\", { className: \"col-sm-6\" }, \"2 slide\"), _react2.default.createElement(\"div\", null, \"3 slide\"));\n};\nexports.default = App;\n\n_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById(\"app\"));\n\n//# sourceURL=webpack:///./src/js/components/App.js?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\nvar _App = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nvar _main = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n\nvar _main2 = _interopRequireDefault(_main);\n\nfunction _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : { default: obj };\n}\n\nconsole.log(\"I'm a silly entry point\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\nvar _main = __webpack_require__(/*! ../sass/main.scss */ \"./src/sass/main.scss\");\n\nvar _main2 = _interopRequireDefault(_main);\n\nvar _App = __webpack_require__(/*! ./components/App */ \"./src/js/components/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : { default: obj };\n}\n\nconsole.log(\"I'm a silly entry point\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
