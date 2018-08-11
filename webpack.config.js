@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 
 
@@ -16,9 +17,14 @@ module.exports = {
         rules: [{
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: ['babel-loader']
+            },
+            {
+                test: /\.jsx?$/,
+                enforce: "pre",
+                exclude: /node_modules/,
+                use: ["babel-loader", "eslint-loader"]
+
             },
             {
                 test: /\.html$/,
@@ -41,6 +47,13 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
+        }),
+        new StyleLintPlugin({
+            configFile: '.stylelintrc',
+            context: 'src',
+            files: '**/*.scss',
+            failOnError: false,
+            quiet: false
         })
     ]
 };
