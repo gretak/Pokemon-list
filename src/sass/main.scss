@@ -6,12 +6,24 @@
 @import "/paralax";
 
 body {
-    line-height: 2;
-    color: red;
-    background-color: yellow;
+line-height: 2;
+color: red; //background-color: yellow;
 }
 
-.slide {
-    padding: 50px;
-    border: 1px solid black;
+html {
+font-size: 16px;
+}
+
+.headerr {
+	height: 10%;
+	background-color: green;
+}
+
+.footer {
+	height: 10%;
+	background-color: green;
+}
+
+p {
+	margin-top: 1em;
 }
