@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 const Footer = () => {
 	return (
 		<div className="footer">
-		footer
+		This footer is special - with no links.
 		</div>
 		);
 };

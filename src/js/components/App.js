@@ -20,7 +20,6 @@ const Page = ({ offset, caption, first, second, gradient, onClick }) => (
   <p style={{ fontSize: 20 }}>{caption}</p>
   <div className={`stripe ${gradient}`} />
   <p>{first}</p>
-  <p>{second}</p>
   </span>
   </Parallax.Layer>
   
@@ -37,9 +36,9 @@ class App extends React.Component {
       <Header/>
       <div className="paralax-container">
       <Parallax className="paralax" ref="parallax" pages={3} horizontal scrolling={true}>
-      <Page offset={0} gradient="pink" caption="who we are" first="Lorem ipsum" second="dolor sit" onClick={() => this.refs.parallax.scrollTo(1)} />
-      <Page offset={1} gradient="teal" caption="what we do" first="consectetur" second="adipiscing elit"  onClick={() => this.refs.parallax.scrollTo(2)} />
-      <Page offset={2} gradient="tomato" caption="what we want" first="Morbi quis" second="est dignissim"  onClick={() => this.refs.parallax.scrollTo(0)} />
+      <Page offset={0} gradient="pink" caption="One day I believe" first="All people will be vegan" onClick={() => this.refs.parallax.scrollTo(1)} />
+      <Page offset={1} gradient="teal" caption="One day I believe" first="IE will be working fine with Flexbox" second="adipiscing elit"  onClick={() => this.refs.parallax.scrollTo(2)} />
+      <Page offset={2} gradient="tomato" caption="One day I believe" first="Global warming will be the biggest problem"  onClick={() => this.refs.parallax.scrollTo(0)} />
       </Parallax>
       </div>
       <Footer />
