@@ -1,0 +1,39 @@
+$spacing: 10px;
+
+ul {
+    padding: $spacing;
+
+    img {
+        filter: grayscale(100%);
+        z-index: 1;
+        width: 120px;
+        height: auto;
+
+        &:hover {
+        
+            filter: none;
+
+            ~ p {
+                display: block;
+            }
+        }
+    }
+
+    p {
+        display: none;
+        position: fixed;
+        background-color: grey;
+        color: white;
+        padding: $spacing;
+        border-radius: 2px;
+        z-index: 2;
+        position: absolute;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: $spacing;
+        position: relative;
+    }
+}
