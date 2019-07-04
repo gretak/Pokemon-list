@@ -1,4 +1,2 @@
-# Webpack 
-
-run npm i
-run npm start
+`run npm i`+
+`run npm start`
